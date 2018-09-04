@@ -2,8 +2,10 @@
 
 ## Install
 
+- zsh
 - tmux
 - Powerline
+- oh-my-zsh
 
 ### vim Plugins
 

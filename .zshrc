@@ -94,6 +94,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Hom
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias tmux='tmux -u'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Powerline
