@@ -1,3 +1,5 @@
+set shell=/bin/sh
+
 set term=xterm-256color
 
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
@@ -8,12 +10,14 @@ set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
 
+filetype off
 execute pathogen#infect()
 syntax on
-filetype plugin indent on
 call pathogen#infect()
+call pathogen#helptags()
+filetype plugin indent on
 
-set colorcolumn=80
+set colorcolumn=100
 set ruler
 
 " Solarized configuration

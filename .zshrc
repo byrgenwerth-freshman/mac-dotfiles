@@ -95,6 +95,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Hom
 #
 # Example aliases
 alias tmux='tmux -u'
+alias tt='python /Users/mowens/Documents/Repos/DevicePack/release_tools/misc_scripts/ticketText -t release -m "Ready for QA with the following builds:" -b'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Powerline
@@ -117,3 +118,6 @@ alias tmux='tmux -u'
 #if [ "$TERM" != "linux" ]; then
 #  install_powerline_precmd
 #fi
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
