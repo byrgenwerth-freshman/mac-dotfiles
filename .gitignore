@@ -1,0 +1,8 @@
+*
+!.gitignore
+!*/.vim
+!.tmux.conf
+!.vimrc
+!.zshrc
+!readme.md
+
