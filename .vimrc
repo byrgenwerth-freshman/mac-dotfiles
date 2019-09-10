@@ -19,15 +19,18 @@ filetype plugin indent on
 
 set colorcolumn=100
 set ruler
+syntax enable
 
 " Solarized configuration
-syntax enable
-" let g:solarized_termcolors=256
 let g:solarized_termtrans = 1
 
-
 set background=dark
+set t_Co=16
+let g:solarized_termcolors=16
 colorscheme solarized
+
+
+
 
 " Tab settings
 set tabstop=2
