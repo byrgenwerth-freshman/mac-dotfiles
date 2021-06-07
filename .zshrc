@@ -1,6 +1,4 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/$USER/.oh-my-zsh
 export TERM=xterm-256color
@@ -9,6 +7,9 @@ export TERM=xterm-256color
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -65,9 +66,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-. /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
-
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home
+. /usr/local/lib/python3.9/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # User configuration
 
@@ -118,3 +117,11 @@ alias tmux='tmux -u'
 #if [ "$TERM" != "linux" ]; then
 #  install_powerline_precmd
 #fi
+
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+eval "$(pyenv init -)"
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+
