@@ -126,3 +126,7 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/usr/local/bin"
 
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+
