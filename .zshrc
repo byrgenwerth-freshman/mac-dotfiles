@@ -120,6 +120,8 @@ alias tmux='tmux -u'
 #fi
 
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
 
