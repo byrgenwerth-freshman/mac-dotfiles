@@ -99,7 +99,7 @@ alias tmux='tmux -u'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Powerline
-#powerline-daemon -q
+powerline-daemon -q
 #source /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 #
 #function powerline_precmd() {
@@ -118,9 +118,6 @@ alias tmux='tmux -u'
 #if [ "$TERM" != "linux" ]; then
 #  install_powerline_precmd
 #fi
-
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"

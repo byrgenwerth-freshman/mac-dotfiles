@@ -1,8 +1,8 @@
-set shell=/bin/sh
+set shell=/bin/zsh
 
 set term=xterm-256color
 
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+source /usr/local/lib/python3.9/site-packages/powerline/bindings/vim/plugin/powerline.vim
 set laststatus=2
 
 set backupdir=~/.vim/backup//
@@ -10,15 +10,21 @@ set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
 
+" Vundle
 filetype off
-execute pathogen#infect()
-syntax on
-call pathogen#infect()
-call pathogen#helptags()
-filetype plugin indent on
 
-set colorcolumn=100
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set colorcolumn=80
 set ruler
+
 syntax enable
 
 " Solarized configuration
@@ -55,21 +61,4 @@ if has("clipboard")
     set clipboard+=unnamedplus
   endif
 endif
-
-
-" Airline Configuration
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_python_exec = 'python3'
-let g:syntastic_python_checkers = ['python']
-
 
